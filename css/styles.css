@@ -16,6 +16,7 @@ small-picture {
 
 news-site {
 	/*   height: 100vh; */
+
 	display: flex;
 	flex-direction: column;
 }
@@ -64,6 +65,7 @@ small-story {
 	display: flex;
 	flex-grow: 1;
 	border: 2px solid #333;
+	justify-content: space-between;
 }
 
 small-story + small-story {
@@ -102,6 +104,8 @@ paragraph {
 
 @media (min-width: 1200px) {
 	news-site {
+		max-width: 1440px;
+		margin: 0 auto;
 		/*     display: flex; */
 		flex-direction: row;
 		justify-content: center;
