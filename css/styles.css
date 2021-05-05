@@ -1,10 +1,27 @@
 @import 'meyers-reset.css';
 @import 'reset.css';
 
-news-site * {
+/* Site Structure */
+news-site,
+main-article,
+top-news,
+title,
+bluebox,
+paragraph,
+stories-list,
+small-story,
+small-picture {
 	display: block;
 }
 
-img {
-	max-width: 500px;
+news-site {
+	/*   height: 100vh; */
+	display: flex;
+	flex-direction: column;
+}
+
+main-article,
+stories-list {
+	width: 100%;
+	padding: 10px;
 }
