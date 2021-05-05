@@ -25,3 +25,93 @@ stories-list {
 	width: 100%;
 	padding: 10px;
 }
+
+news-site * {
+	padding: 10px;
+}
+
+bluebox {
+	height: 400px;
+	background-color: blue;
+}
+
+small-picture {
+	height: 50px;
+	width: 80px;
+}
+
+small-picture.red {
+	background-color: red;
+}
+
+small-picture.green {
+	background-color: green;
+}
+small-picture.orange {
+	background-color: orange;
+}
+small-picture.purple {
+	background-color: purple;
+}
+small-picture.gray {
+	background-color: gray;
+}
+small-picture.pink {
+	background-color: pink;
+}
+
+small-story {
+	display: flex;
+	flex-grow: 1;
+	border: 2px solid #333;
+}
+
+small-story + small-story {
+	margin-top: 10px;
+}
+
+/* Site Styles */
+
+top-news {
+	font-family: Arial;
+	color: orange;
+	font-size: 15px;
+}
+
+title {
+	font-size: 30px;
+}
+
+paragraph {
+	line-height: 1.5;
+	margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+	stories-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	small-story {
+		display: flex;
+		width: 50%;
+		margin-top: 10px;
+	}
+}
+
+@media (min-width: 1200px) {
+	news-site {
+		/*     display: flex; */
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	stories-list {
+		flex-direction: column;
+	}
+	small-story {
+		width: 100%;
+	}
+}
