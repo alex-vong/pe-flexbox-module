@@ -1,6 +1,10 @@
 @import 'meyers-reset.css';
 @import 'reset.css';
 
-body {
-	background-color: #333;
+news-site * {
+	display: block;
+}
+
+img {
+	max-width: 500px;
 }
